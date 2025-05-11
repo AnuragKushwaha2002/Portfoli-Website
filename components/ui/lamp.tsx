@@ -25,7 +25,7 @@ export function LampDemo() {
         </h1>
 
         <p className="text-white text-base md:text-lg mt-6 max-w-xl">
-          Let’s create something simple, smart, and stunning — together.
+          Let&apos;s create something simple, smart, and stunning — together.
         </p>
 
         <a href="mailto:kushwahaanurag504@gmail.com" className="mt-8">
