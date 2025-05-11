@@ -21,7 +21,8 @@ export function LampDemo() {
         className="flex flex-col items-center text-center" id="contact"
       >
         <h1 className="text-transparent bg-gradient-to-br from-slate-300 to-slate-500 bg-clip-text text-5xl md:text-7xl font-bold leading-tight lg:max-w-[45vw]">
-          Like what you see? <span className="text-purple">Let's</span> build something even better.
+          Like what you see? <span className="text-purple">Let&apos;s</span> build something even better.
+
         </h1>
 
         <p className="text-white text-base md:text-lg mt-6 max-w-xl">
