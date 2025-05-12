@@ -6,6 +6,7 @@ import { FaLocationArrow } from "react-icons/fa6";
 import { cn } from "@/lib/utils";
 import MagicButton from "../MagicButton";
 import { socialMedia } from "@/data";
+import Image from "next/image";
 
 export function LampDemo() {
   return (
@@ -18,11 +19,11 @@ export function LampDemo() {
           duration: 0.8,
           ease: "easeInOut",
         }}
-        className="flex flex-col items-center text-center" id="contact"
+        className="flex flex-col items-center text-center"
+        id="contact"
       >
         <h1 className="text-transparent bg-gradient-to-br from-slate-300 to-slate-500 bg-clip-text text-5xl md:text-7xl font-bold leading-tight lg:max-w-[45vw]">
           Like what you see? <span className="text-purple">Let&apos;s</span> build something even better.
-
         </h1>
 
         <p className="text-white text-base md:text-lg mt-6 max-w-xl">
@@ -48,7 +49,13 @@ export function LampDemo() {
                 rel="noopener noreferrer"
                 className="w-10 h-10 flex justify-center items-center backdrop-filter backdrop-blur-lg saturate-180 bg-opacity-75 bg-black-200 rounded-lg border border-black-300"
               >
-                <img src={info.img} alt="icon" width={20} height={20} />
+                <Image
+                  src={info.img}
+                  alt="icon"
+                  width={20}
+                  height={20}
+                  unoptimized // remove if you're using local/public assets
+                />
               </a>
             ))}
           </div>
