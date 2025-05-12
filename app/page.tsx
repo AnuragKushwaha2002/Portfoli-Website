@@ -1,14 +1,17 @@
+// page.tsx
 "use client";
 
+import dynamic from "next/dynamic";
 import { navItems } from "@/data";
 
 import Hero from "@/components/Hero";
 import Grid from "@/components/Grid";
-
 import Experience from "@/components/Experience";
 import RecentProjects from "@/components/RecentProjects";
 import { FloatingNav } from "@/components/ui/FloatingNavbar";
-import { LampDemo } from "@/components/ui/lamp";
+
+// Dynamically import LampDemo with SSR disabled
+const LampDemo = dynamic(() => import("@/components/ui/lamp").then(mod => mod.LampDemo), { ssr: false });
 
 const Home = () => {
   return (
@@ -18,11 +21,8 @@ const Home = () => {
         <Hero />
         <Grid />
         <RecentProjects />
-       
         <Experience />
-        {/* <Approach /> */}
-        <LampDemo/>
-        {/* <Footer /> */}
+        <LampDemo />
       </div>
     </main>
   );
