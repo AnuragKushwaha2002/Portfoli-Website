@@ -22,7 +22,7 @@ const Home = () => {
         <Grid />
         <RecentProjects />
         <Experience />
-        <LampDemo />
+        {/* <LampDemo /> */}
       </div>
     </main>
   );
